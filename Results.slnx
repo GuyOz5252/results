@@ -5,6 +5,7 @@
         <File Path="Directory.Build.props"/>
         <File Path="Directory.Packages.props"/>
         <File Path="README.md"/>
+        <File Path="LICENSE.txt"/>
     </Folder>
     <Folder Name="/src/">
         <Project Path="src/Results/Results.csproj"/>
