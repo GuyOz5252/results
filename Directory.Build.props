@@ -9,11 +9,17 @@
         <CodeAnalysisTreatWarningsAsErrors>true</CodeAnalysisTreatWarningsAsErrors>
         <EnforceCodeStyleInBuild>true</EnforceCodeStyleInBuild>
         <NoWarn>CA2016,S1075</NoWarn>
+        <Authors>Guy Oz</Authors>
+        <Description>Result pattern for .NET applications.</Description>
+        <PackageLicenseFile>LICENSE.txt</PackageLicenseFile>
+        <RepositoryUrl>https://github.com/GuyOz5252/results</RepositoryUrl>
+        <PackageProjectUrl>https://github.com/GuyOz5252/results</PackageProjectUrl>
     </PropertyGroup>
     <ItemGroup Condition="'$(MSBuildProjectExtension)' != '.dcproj'">
         <PackageReference Include="SonarAnalyzer.CSharp">
             <PrivateAssets>all</PrivateAssets>
             <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
         </PackageReference>
+        <None Include="$(MSBuildThisFileDirectory)LICENSE.txt" Pack="true" PackagePath="" Visible="false" />
     </ItemGroup>
 </Project>
