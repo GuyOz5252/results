@@ -45,7 +45,7 @@ jobs:
               uses: actions/upload-artifact@v4
               with:
                   name: nuget-package
-                  path: **/.nupkg/*.nupkg
+                  path: '**/.nupkg/*.nupkg'
                   if-no-files-found: error
 
     publish:
