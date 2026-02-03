@@ -1,4 +1,4 @@
-﻿namespace Results;
+﻿namespace DotResults;
 
 public readonly record struct Result
 {
