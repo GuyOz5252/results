@@ -8,7 +8,7 @@
         <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
         <CodeAnalysisTreatWarningsAsErrors>true</CodeAnalysisTreatWarningsAsErrors>
         <EnforceCodeStyleInBuild>true</EnforceCodeStyleInBuild>
-        <NoWarn>CA2016,S1075</NoWarn>
+        <NoWarn>NU1507</NoWarn>
         <Authors>Guy Oz</Authors>
         <Description>Result pattern for .NET applications.</Description>
         <PackageReadmeFile>README.md</PackageReadmeFile>
