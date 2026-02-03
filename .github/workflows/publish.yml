@@ -25,7 +25,7 @@ jobs:
               run: dotnet test --configuration Release --no-build
 
             - name: Pack
-              run: dotnet pack --configuration Release --no-build --output .nupkg -p:PackageVersion=${{ github.ref_name }}
+              run: dotnet pack Results.slnx --configuration Release --no-build --output .nupkg -p:PackageVersion=${{ github.ref_name }}
 
             - name: Upload NuGet Package
               uses: actions/upload-artifact@v4
