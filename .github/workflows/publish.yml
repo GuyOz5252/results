@@ -33,9 +33,7 @@ jobs:
                   if [ "${{ github.event_name }}" == "release" ]; then
                     echo "version=${{ github.ref_name }}" >> $GITHUB_OUTPUT
                   else
-                    # Get the latest release tag, or use 0.0.0 if none exists
                     LATEST_TAG=$(git describe --tags --abbrev=0 2>/dev/null || echo "0.0.0")
-                    # Remove 'v' prefix if present
                     LATEST_VERSION=${LATEST_TAG#v}
                     echo "version=${LATEST_VERSION}-dev.${{ github.sha }}" >> $GITHUB_OUTPUT
                   fi
@@ -47,7 +45,7 @@ jobs:
               uses: actions/upload-artifact@v4
               with:
                   name: nuget-package
-                  path: ./.nupkg/*.nupkg
+                  path: **/.nupkg/*.nupkg
                   if-no-files-found: error
 
     publish:
